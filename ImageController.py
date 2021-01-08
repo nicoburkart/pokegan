@@ -68,7 +68,7 @@ def create_and_save_gif(image_dir_url: str, output_url: str):
     with imageio.get_writer(uri=output_url, mode='I') as writer:
         filenames = os.listdir(image_dir_url)
         # Sorts the images based on their epoch in ascending order
-        filenames = sorted(filenames, key=lambda filename: int(filename[:-4].split('_')[-1]))
+        filenames = sorted(filenames, key=lambda filename: int(filename[:-4].split('-')[-1]))
 
         for filename in filenames:
             filename = os.path.join(image_dir_url, filename)
