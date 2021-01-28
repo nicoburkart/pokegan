@@ -1,5 +1,14 @@
 # PokéGAN
 
+## Jupyter Notebook
+
+Das Jupyter Notebook, welches den Code, die Dokumentation und die Ergebnisse beinhaltet kann hier gefunden werden: <br>
+
+Als html: [html Jupyter Notebook](./src/main.html)
+Als ipynb: [ipynb Jupyter Notebook](./src/main.ipynb)
+
+## Auf dem eigenen Rechner zum Laufen bringen
+
 Folgende Schritte müssen durchgeführt werden, um das Projekt auch auf dem eigenen PC zum laufen zu bringen:
 
 1. Clonen Sie das Projekt (oder laden Sie es herunter)
