@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #212121;
+  position: relative;
+}
+
+div.contact-details {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  svg {
+    height: 2rem;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

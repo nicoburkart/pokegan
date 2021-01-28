@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #181818;
+}
+
+@font-face {
+  font-family: "m-reg";
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-med";
+  src: url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-semi-bold";
+  src: url("/assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "m-bold";
+  src: url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+* {
+  font-family: m-med;
+  color: white;
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (max-width: 1400px) {
+  html,
+  body {
+    font-size: 75%;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 60%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+}

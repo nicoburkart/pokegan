@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #212121;
+  position: relative;
+}
+
+div.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  transition: 300ms;
+  height: 30vh;
+  -webkit-filter: drop-shadow(2px 2px 3px black);
+  filter: drop-shadow(2px 2px 3px black);
+}
+
+img:hover {
+  transform: translateY(-10px);
+  -webkit-filter: drop-shadow(10px 10px 10px black);
+  filter: drop-shadow(10px 10px 10px black);
+}
+
+.col {
+  padding: 0;
+}
+
+app-button {
+  position: absolute;
+  bottom: 5rem;
+}

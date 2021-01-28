@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #212121;
+  position: relative;
+}
+
+app-headline {
+  position: absolute;
+  top: 0;
+}
+
+img {
+  height: 60vh;
+}
+
+app-button {
+  position: absolute;
+  bottom: 5rem;
+}

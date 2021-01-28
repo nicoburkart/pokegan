@@ -1,0 +1,82 @@
+:host {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  * {
+    text-align: center;
+  }
+}
+
+div.text-box {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  height: 60vh;
+
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+}
+
+div.stripe {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  background-color: #212121;
+
+  div.icon {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    img {
+      height: 50%;
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+img.arrow-down {
+  width: 5rem;
+  position: fixed;
+  bottom: 0.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  &.animate__upDown {
+    animation-name: upDownAnimation;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes upDownAnimation {
+  0% {
+    bottom: 0.7rem;
+  }
+
+  50% {
+    bottom: 0.3rem;
+  }
+
+  100% {
+    bottom: 0.7rem;
+  }
+}
