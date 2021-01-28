@@ -4,8 +4,8 @@
 
 Das Jupyter Notebook, welches den Code, die Dokumentation und die Ergebnisse beinhaltet kann hier gefunden werden: <br>
 
-Als html: [html Jupyter Notebook](./src/main.html)
-Als ipynb: [ipynb Jupyter Notebook](./src/main.ipynb)
+[html Jupyter Notebook](./src/main.html) <br>
+[ipynb Jupyter Notebook](./src/main.ipynb)
 
 ## Auf dem eigenen Rechner zum Laufen bringen
 
