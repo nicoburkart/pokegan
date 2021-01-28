@@ -1,5 +1,17 @@
 # PokéGAN
 
+Semesterprojekt im Studiengang Mobile Medien an der Hochschule der Medien.
+
+Projektmitglieder: <br>
+Nico Burkart (Kürzel: nb094, Matrikel Nr. 34924), <br>
+Jonas Wolfram (Kürzel: jw132, Matrikel Nr. 35589)
+
+Betreuer: <br>
+Prof. Dr. Joachim Charzinski
+
+Projektzeitraum: <br>
+WS20/21
+
 ## Jupyter Notebook
 
 Das Jupyter Notebook, welches den Code, die Dokumentation und die Ergebnisse beinhaltet kann hier gefunden werden: <br>
@@ -7,7 +19,7 @@ Das Jupyter Notebook, welches den Code, die Dokumentation und die Ergebnisse bei
 [html Jupyter Notebook](./src/main.html) <br>
 [ipynb Jupyter Notebook](./src/main.ipynb)
 
-## Auf dem eigenen Rechner zum Laufen bringen
+## Projekt auf dem eigenen Rechner zum Laufen bringen
 
 Folgende Schritte müssen durchgeführt werden, um das Projekt auch auf dem eigenen PC zum laufen zu bringen:
 
