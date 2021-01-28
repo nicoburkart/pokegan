@@ -19,6 +19,18 @@ Das Jupyter Notebook, welches den Code, die Dokumentation und die Ergebnisse bei
 [html Jupyter Notebook](./src/main.html) <br>
 [ipynb Jupyter Notebook](./src/main.ipynb)
 
+## Trainiertes Model
+
+Den trainierten Generator kann man hier finden: <br>
+
+[Trainierter Generator](./public)
+
+## Landingpage
+
+Der Sourcecode für die Landingpage (Die Website, über die das Model des Generators verwendet werden kann) ist in diesem Ordner: <br>
+
+[Landingpage Sourcecode](./pokegan-landingpage)
+
 ## Projekt auf dem eigenen Rechner zum Laufen bringen
 
 Folgende Schritte müssen durchgeführt werden, um das Projekt auch auf dem eigenen PC zum laufen zu bringen:
