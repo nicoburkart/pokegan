@@ -1,6 +1,8 @@
 from matplotlib import pyplot as plt
 import os
 
+# This module provides functions to evaluate the results after training.
+
 
 def plot_and_save_losses(generator_losses: list, discriminator_real_losses: list, discriminator_fake_losses: list, discriminator_total_losses: list, epochs: list, generated_figures_dir_url: str):
     figure, axes = plt.subplots(2, 1)

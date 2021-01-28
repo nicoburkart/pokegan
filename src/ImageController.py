@@ -1,10 +1,12 @@
 from matplotlib import pyplot as plt
-import matplotlib.image as mpimg
 import os
 from tensorflow.keras.preprocessing.image import img_to_array, load_img
 import numpy as np
 import imageio
 from tensorflow.keras import models
+from tensorflow_docs.vis import embed
+
+# This module provides functions to handle images (e.g. load images, plot images, save generated images etc.).
 
 
 def load_all_images(image_dir_url: str):
@@ -25,7 +27,7 @@ def plot_random_images(image_dir_url: str):
     _, axes = plt.subplots(nrows=4, ncols=4)
 
     for axis, random_image_url in zip(axes.flatten(), random_image_urls):
-        random_image = mpimg.imread(fname=random_image_url)
+        random_image = plt.imread(fname=random_image_url)
         axis.imshow(random_image)
         axis.axis('off')
 
@@ -44,7 +46,7 @@ def generate_and_plot_images(generator: models.Sequential, seed):
         # The image has to be rescaled. Right now the ouput of the generator is an image with values between -1 and 1.
         generated_image = generated_image.numpy() * 127.5 + 127.5
         generated_image = generated_image.astype('uint8')
-        axis.imshow(generated_image)
+        axis.imshow(generated_image[:, :, 0], cmap='gray')
         axis.axis('off')
 
 
@@ -64,15 +66,20 @@ def generate_and_save_images(generator: models.Sequential, seed, output_url: str
     plt.close(figure)
 
 
-def create_and_save_gif(image_dir_url: str, output_url: str):
+def save_gif(image_dir_url: str, output_url: str):
     with imageio.get_writer(uri=output_url, mode='I') as writer:
         filenames = os.listdir(image_dir_url)
         # Sorts the images based on their epoch in ascending order
         filenames = sorted(filenames, key=lambda filename: int(filename[:-4].split('-')[-1]))
 
         for filename in filenames:
-            filename = os.path.join(image_dir_url, filename)
-            image = imageio.imread(uri=filename)
+            file_url = os.path.join(image_dir_url, filename)
+
+            image = imageio.imread(uri=file_url)
             writer.append_data(image)
 
         print(f'Saved gif at: {output_url}')
+
+
+def plot_gif(gif_url):
+    return embed.embed_file(gif_url)

@@ -3,6 +3,8 @@ from tensorflow.keras import models
 import time
 import tensorflowjs as tfjs
 
+# This module provides functions to create necessary directories to store generated content and to save the models and their weights.
+
 
 def create_checkpoint_dirs(generator_checkpoints_dir_url: str, discriminator_checkpoints_dir_url: str):
     os.makedirs(generator_checkpoints_dir_url, exist_ok=True)
@@ -40,7 +42,7 @@ def do_checkpoint_files_exist(generator_checkpoints_dir_url: str, discriminator_
     if not do_checkpoint_dirs_exist(generator_checkpoints_dir_url, discriminator_checkpoints_dir_url) or (len(os.listdir(path=generator_checkpoints_dir_url)) == 0 or len(os.listdir(path=discriminator_checkpoints_dir_url)) == 0):
         return False
     else:
-        return True#
+        return True
 
 
 def do_checkpoint_dirs_exist(generator_checkpoints_dir_url: str, discriminator_checkpoints_dir_url: str):

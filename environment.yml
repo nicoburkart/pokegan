@@ -113,6 +113,7 @@ dependencies:
   - zstd=1.4.5=h04227a9_0
   - pip:
     - absl-py==0.11.0
+    - astor==0.8.1
     - astunparse==1.6.3
     - cachetools==4.1.1
     - chardet==3.0.4
@@ -132,13 +133,17 @@ dependencies:
     - protobuf==3.14.0
     - pyasn1==0.4.8
     - pyasn1-modules==0.2.8
+    - pyyaml==5.3.1
     - requests==2.25.0
     - requests-oauthlib==1.3.0
     - rsa==4.6
     - tensorboard==2.4.0
     - tensorboard-plugin-wit==1.7.0
     - tensorflow==2.3.1
+    - tensorflow-docs==0.0.0ebf2c85ffe8126cc0590b7e1e4ed2b54acc97b52-
     - tensorflow-estimator==2.3.0
+    - tensorflow-hub==0.9.0
+    - tensorflowjs==2.8.3
     - termcolor==1.1.0
     - urllib3==1.26.2
     - werkzeug==1.0.1
