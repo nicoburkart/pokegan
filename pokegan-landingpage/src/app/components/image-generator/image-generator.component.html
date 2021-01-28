@@ -1,5 +1,9 @@
 <app-headline>Generate new Images with our A.I.</app-headline>
 
-<img src="/assets/images/image_at_epoch_121.png" alt="">
+<div class="generated-pokemon-container">
+  <img *ngFor="let generatedPokemon of generatedPokemons" [src]="generatedPokemon" alt="" />
+</div>
 
-<app-button type='generator'>Generate</app-button>
+<app-button type="generator" (click)="onClickCreatePokemon()"
+  >Generate</app-button
+>

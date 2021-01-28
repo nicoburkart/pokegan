@@ -14,11 +14,23 @@ app-headline {
   top: 0;
 }
 
-img {
-  height: 60vh;
-}
-
 app-button {
   position: absolute;
   bottom: 5rem;
+}
+
+
+div.generated-pokemon-container {
+
+  width: calc(4 * 64px + 40px);
+  height: calc(4 * 64px + 40px);
+  display: flex;
+  flex-wrap: wrap;
+
+  & > img {
+    width: 64px;
+    height: 64px;
+
+    margin: 5px;
+  }
 }
