@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
+  gallery_images = 32
+  gallery_indizes = []
+
   constructor() { }
 
   ngOnInit(): void {
-  }
+    for(let i=1; i<=this.gallery_images; i++)
+      this.gallery_indizes[i-1] = i
+    }
 
 }

@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 110vh;
+  width: 100%;
+  background-color: #212121;
+  position: relative;
+}
+img {
+  position: absolute;
+  width: 100%;
+}

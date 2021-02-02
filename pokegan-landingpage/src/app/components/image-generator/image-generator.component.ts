@@ -12,6 +12,7 @@ export class ImageGeneratorComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     this.model = await tf.loadLayersModel('assets/generator-model/model.json');
+    this.onClickCreatePokemon()
   }
 
   onClickCreatePokemon(): void {

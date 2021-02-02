@@ -8,6 +8,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ImageGeneratorComponent } from './components/image-generator/image-generator.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { TrainingInfoComponent } from './components/training-info/training-info.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactComponent } from './components/contact/contact.component';
     GalleryComponent,
     ButtonComponent,
     ImageGeneratorComponent,
-    ContactComponent
+    ContactComponent,
+    TrainingInfoComponent
   ],
   imports: [
     BrowserModule
