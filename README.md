@@ -14,20 +14,24 @@ WS20/21
 
 ## Jupyter Notebook
 
-Das Jupyter Notebook, welches den Code, die Dokumentation und die Ergebnisse beinhaltet kann hier gefunden werden: <br>
+Das Jupyter Notebook, welches den Code für das GAN, die Dokumentation und die Ergebnisse beinhaltet kann hier gefunden werden: <br>
 
 [html Jupyter Notebook](./src/main.html) <br>
 [ipynb Jupyter Notebook](./src/main.ipynb)
 
 ## Trainiertes Model
 
-Den trainierten Generator kann man hier finden: <br>
+Das trainierte Model des Generators kann man hier finden: <br>
 
-[Trainierter Generator](./public)
+[Trainiertes Generator Model](./public)
 
 ## Landingpage
 
-Der Sourcecode für die Landingpage (Die Website, über die das Model des Generators verwendet werden kann) ist in diesem Ordner: <br>
+Die Landingpage, über die das Model des Generators verwendet werden kann, kann über folgende URL erreicht werden: <br>
+
+[Landingpage](https://pokegan-d16a1.web.app/)
+
+Der Sourcecode für die Landingpage ist in diesem Ordner: <br>
 
 [Landingpage Sourcecode](./pokegan-landingpage)
 
