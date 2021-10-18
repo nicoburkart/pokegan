@@ -6,6 +6,8 @@ Projektmitglieder: <br>
 Nico Burkart (Kürzel: nb094, Matrikel Nr. 34924), <br>
 Jonas Wolfram (Kürzel: jw132, Matrikel Nr. 35589)
 
+Note: 1,0
+
 Betreuer: <br>
 Prof. Dr. Joachim Charzinski
 
